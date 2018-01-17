@@ -1,0 +1,75 @@
+@import "vars";
+
+// element reset
+
+// dialog
+.el-dialog__header{
+  padding: 10px 10px 0;
+  background-color: $color-bg;
+
+  .el-dialog__title{
+    color: #fff;
+  }
+}
+
+.el-dialog__body{
+  padding: 0 10px 10px;
+  background-color: $color-bg;
+  line-height: inherit;
+}
+
+.el-dialog__headerbtn{
+  top: 10px;
+}
+
+// radio
+$el-radio: #434343;
+// type = 1 激活背景为白
+.el-radio-button__inner{
+  padding: 4px 8px;
+  background-color: $el-radio;
+  border-color: $el-radio;
+  color: #fff;
+
+  &:hover{
+    color: #fff;
+  }
+}
+.el-radio-button:first-child .el-radio-button__inner{
+  border-left: 0;
+}
+.el-radio-button__orig-radio:checked+.el-radio-button__inner{
+  background-color: #fff;
+  border-color: #fff;
+  color: $el-radio;
+  box-shadow: none;
+}
+.el-radio-button:focus:not(.is-focus):not(:active){
+  box-shadow: none;
+}
+
+// type = 2 激活背景为黑
+/*.el-radio-button__inner{
+  padding: 4px 8px;
+
+  &:hover{
+    color: $el-radio;
+  }
+}
+.el-radio-button:first-child .el-radio-button__inner{
+  border-left: 0;
+}
+.el-radio-button__orig-radio:checked+.el-radio-button__inner{
+  background-color: $el-radio;
+  border-color: $el-radio;
+  box-shadow: none;
+}
+.el-radio-button:focus:not(.is-focus):not(:active){
+  box-shadow: none;
+}*/
+
+.el-radio+.el-radio{
+  margin-left: 0;
+}
+
+//@import "../../../node_modules/element-ui/lib/theme-chalk/index.css";

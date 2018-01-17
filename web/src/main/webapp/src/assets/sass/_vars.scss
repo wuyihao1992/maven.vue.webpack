@@ -1,0 +1,23 @@
+$color-dark: #000001;
+$color-bg: #1e1e1e;
+$color-activeTab: #131722;
+$color-green: #3da161;
+$color-blue: #32a3fa;
+$color-red: #fb3322;
+$color-yellow: #fd7e50;
+$color-yellow1: #ffd325;
+$color-bot-gray: #333;
+
+@mixin clear {
+  width: 0;
+  height: 0;
+  display: block;
+  content: "";
+  clear: both;
+}
+
+@mixin bgi {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
